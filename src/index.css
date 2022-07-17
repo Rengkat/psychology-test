@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .link {
+    @apply hover:bg-[#47066c] hover:text-white py-3 px-5 rounded-md;
+  }
+  .nav {
+    @apply w-[85%] md:w-[70%] lg:w-[60%] m-auto my-3 flex items-center justify-between;
+  }
+  .mobileLink {
+    @apply flex space-x-2 text-xl  text-slate-300 shadow-md rounded-md py-2 px-3 border-2 border-[#580f82];
+  }
+  .mobileNav {
+    @apply -mr-[100%] transition-all ease-in duration-1000 w-[70%] pl-5 md:hidden  bg-[#6e0ca7] fixed top-0 right-0 z-50 bottom-0;
+  }
+  .linkMobile {
+    @apply my-1 w-[90%];
+  }
+  .footerLink {
+    @apply text-slate-300 font-semibold md:text-2xl;
+  }
+  .advert {
+    @apply row-span-1 h-[50vh] transition-all ease-in duration-300 hover:bg-[#983fcb] hover:text-white  shadow-md rounded-md border-2 border-black flex items-center justify-center;
+  }
+}
+.hero {
+  position: relative;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.382);
+}
+.icon {
+  color: white;
+}
