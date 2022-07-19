@@ -3,7 +3,7 @@ import heroImage from "../app/data/hero.png";
 const Hero = () => {
   return (
     <div className="hero h-[50vh] md:h-[100vh] flex items-center justify-center">
-      <div className="flex w-[95%] md:w-[60%] mx-auto">
+      <div className="flex w-[95%] lg:w-[60%] mx-auto">
         <img
           src={heroImage}
           alt="Hero image"
@@ -15,12 +15,12 @@ const Hero = () => {
           </h1>
           <p className="my-4 md:w-[70%] md:text-2xl">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
-            doloremque.{" "}
+            doloremque.
             <span className="hidden md:block">
               Lorem ipsum dolor sit amet, consectetur.
             </span>
           </p>
-          <button className="bg-[#6e0ca7] my-2 py-2 px-3 md:py-3 md:px-5 md:my-5 md:text-xl text-white font-semibold rounded-md shadow capitalize ">
+          <button className="bg-[#6e0ca7] hover:bg-[#2f0746] transition-all duration-500 my-2 py-2 px-3 md:py-3 md:px-5 md:my-5 md:text-xl text-white font-semibold rounded-md shadow capitalize ">
             check out
           </button>
         </div>

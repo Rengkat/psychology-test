@@ -1,6 +1,14 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
-import { Home, NavBar, Test, Career, Blog } from "./components/indexComponents";
+import {
+  Home,
+  NavBar,
+  Test,
+  Career,
+  Blog,
+  Question,
+} from "./components/indexComponents";
+import NewsLetter from "./components/NewsLetter";
 
 // import NavBar from "./components/NavBar";
 function App() {
@@ -15,9 +23,11 @@ function App() {
           <Route exact path="/test" element={<Test />} />
           <Route exact path="/career" element={<Career />} />
           <Route exact path="/blog" element={<Blog />} />
+          <Route exact path="/test/question" element={<Question />} />
         </Routes>
 
         {/* ...............FOOTER............... */}
+        <NewsLetter />
         <Footer />
       </Router>
     </div>

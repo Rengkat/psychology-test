@@ -24,6 +24,12 @@
   .advert {
     @apply row-span-1 h-[50vh] transition-all ease-in duration-300 hover:bg-[#983fcb] hover:text-white  shadow-md rounded-md border-2 border-black flex items-center justify-center;
   }
+  .newleterBtn {
+    @apply bg-[#6e0ca7] my-4 font-semibold rounded shadow-md py-3 px-7 text-white;
+  }
+  .questionBtn {
+    @apply my-2 flex justify-center items-center w-[20rem] p-3 rounded-md shadow md:text-xl text-white;
+  }
 }
 .hero {
   position: relative;
