@@ -1,11 +1,21 @@
 import { Link } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
 import logo from "../components/app/data/logo.png";
 import { FiMenu } from "react-icons/fi";
 import { FaHome, FaBloggerB } from "react-icons/fa";
 import { TbTestPipe } from "react-icons/tb";
 import { MdWork } from "react-icons/md";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
+import { openMobileNav } from "./app/features/testSlice";
+
 const NavBar = () => {
+  const { isOpenMobileNav } = useSelector((store) => store.question);
+
+  const dispatch = useDispatch();
+  const handleOpenMenu = () => {
+    dispatch(openMobileNav());
+  };
+
   return (
     <nav className="nav  ">
       {/* logo */}
@@ -30,11 +40,23 @@ const NavBar = () => {
           <Link to="/blog">Blog</Link>
         </li>
       </ul>
-      <FiMenu fontSize={35} className=" absolute md:hidden top-4 right-5" />
-      <div className=" mobileNav ">
+      <FiMenu
+        onClick={handleOpenMenu}
+        fontSize={35}
+        className=" absolute md:hidden top-4 right-5"
+      />
+      {/* -mr-[100%] */}
+      <div
+        className={
+          isOpenMobileNav ? " mobileNav -mr-[100%] " : " mobileNav -mr-[0%]  "
+        }>
         <ul className=" flex flex-col md:hidden  ">
           <li>
-            <HiOutlineMenuAlt2 fontSize={30} className="text-slate-300 my-5 " />
+            <HiOutlineMenuAlt2
+              onClick={handleOpenMenu}
+              fontSize={30}
+              className="text-slate-300 my-5 "
+            />
           </li>
           <li className="linkMobile">
             <Link to="/" className="mobileLink">

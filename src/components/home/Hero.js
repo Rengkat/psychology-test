@@ -7,13 +7,13 @@ const Hero = () => {
         <img
           src={heroImage}
           alt="Hero image"
-          className="w-40 h-48 md:w-64 md:h-72"
+          className="w-40 h-52 md:w-64 md:h-72"
         />
         <div className="w-[55%] absolute z-20 right-4 md:right-10 pl-3 md:pl-1">
           <h1 className="font-bold text-2xl md:text-5xl capitalize md:w-[70%]  ">
             what lies behind your outward calm?
           </h1>
-          <p className="my-4 md:w-[70%] md:text-2xl">
+          <p className="my-1 md:my-5 md:w-[70%] md:text-2xl">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
             doloremque.
             <span className="hidden md:block">
