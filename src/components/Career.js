@@ -2,11 +2,11 @@ import React from "react";
 
 const Career = () => {
   return (
-    <div className="w-[70%] mx-auto mt-20 mb-32 ">
-      <h1 className="text-3xl font-bold my-3">
+    <div className="w-[80%] mx-auto mt-20 mb-32 ">
+      <h1 className="text-2xl md:text-3xl font-bold my-3">
         Top 5 Psychometric Tests for Your Career Success
       </h1>
-      <p className="text-2xl text-justify">
+      <p className="text-[18px] md:text-2xl text-justify">
         To make a successful career change, you have to know what type of career
         is going to suit your personality. Psychometric tests are a quick,
         convenient way of “personality typing” — getting an idea of which
@@ -23,8 +23,10 @@ const Career = () => {
         your own time. Here are five of the most popular free tests doing the
         rounds at the moment (the headers are hyperlinks):
       </p>
-      <h1 className="font-bold text-3xl my-10">Jung Typology Test</h1>
-      <p className="text-2xl text-justify">
+      <h1 className="font-bold text-2xl md:text-3xl my-10">
+        Jung Typology Test
+      </h1>
+      <p className="text-[18px] md:text-2xl text-justify">
         According to the thinking behind this test, personality typing involves
         classifying the individual according to four criteria:
         extroversion/introversion, sensing/intuition, thinking/feeling,
@@ -35,10 +37,10 @@ const Career = () => {
         some educational institutions that can give you the relevant skills
         training.
       </p>
-      <h1 className="text-3xl font-bold my-10">
+      <h1 className="text-2xl md:text-3xl font-bold my-10">
         Career Psychometrics: ‘How to Land your Ideal Job’
       </h1>
-      <p className="text-2xl text-justify">
+      <p className="text-[18px] md:text-2xl text-justify">
         You have 2 minutes 45 seconds to answer a short series of questions
         asking you to what extent you have certain personality traits. After
         you’ve completed it, you get a free Personality Report that explicitly
@@ -47,20 +49,20 @@ const Career = () => {
         address to get the free report, and then they send you some spam for a
         few days.
       </p>
-      <h1 className="text-3xl font-bold my-10">
+      <h1 className="text-2xl md:text-3xl font-bold my-10">
         Finding Potential: Individuals’ Personality Questionnaire
       </h1>
-      <p className="text-2xl text-justify">
+      <p className="text-[18px] md:text-2xl text-justify">
         This test takes around 15 minutes to complete and gives you a 15 page
         report that shows you the personality traits you scored higher and lower
         on; gives you a detailed breakdown of these traits; and then matches
         work preferences and possible jobs to you according to whether you
         scored high or low on each particular trait.
       </p>
-      <h1 className="text-3xl font-bold my-10">
+      <h1 className="text-2xl md:text-3xl font-bold my-10">
         SimilarMinds.com: ‘What Career Suits Me’?
       </h1>
-      <p className="text-2xl text-justify">
+      <p className="text-[18px] md:text-2xl text-justify">
         This is slightly different in that, for some reason, it first asks you
         what your ‘current or desired’ career is before you take the test. It
         then gives you a list of statements and you have to indicate to what
@@ -69,10 +71,10 @@ const Career = () => {
         list of possible professions. Of course, one of these professions is the
         one you put down as your ‘desired career’.
       </p>
-      <h1 className="text-3xl font-bold my-10">
+      <h1 className="text-2xl md:text-3xl font-bold my-10">
         PersonalityType.com: ‘Discover Your Perfect Career’ Quiz
       </h1>
-      <p className="text-2xl text-justify">
+      <p className="text-[18px] md:text-2xl text-justify">
         This uses the same criteria as the Jung Typology Test, except you
         yourself have to decide whether you are an extrovert or introvert,
         sensor or intuitive, etc. by reading bullet point descriptions of each
