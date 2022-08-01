@@ -87,7 +87,7 @@ export const data = [
 export const blog = [
   {
     id: 1,
-    togle: false,
+    togle: true,
     date: "AUG 24, 2020, 20:29 IST",
     title: "Impact of environment on human behaviour",
     image:
@@ -96,7 +96,7 @@ export const blog = [
       "People’s mood and wellbeing are affected by various elements of the built environment including spatial allocations, lighting, access to nature, colour, indoor air quality, noise, thermal comfort, user control of space, and preferred environments (i.e., those that are coherent and engaging).Numerous studies show the positive effects of daylight on human psychology and health. In the field of healthcare, many of these studies show that patients assigned to sunny rooms recover more quickly, on average than those assigned to rooms with less daylight.Access to nature and green environments yields better cognitive functioning, more self-discipline and impulse control, and greater mental health overall. Less access to nature is linked to exacerbated attention deficit, higher rates of anxiety disorders, and higher rates of clinical depression.The amount, distribution, and form of interior spaces can have profound effects on the psychological health of people. Some of the main psychological issues at play in regards to spatial allocations include territoriality, personal space, privacy, and crowding.",
   },
   {
-    togle: false,
+    togle: true,
     id: 2,
     date: "JAN 23, 2021, 20:29 IST",
     title: "Personality Traits",

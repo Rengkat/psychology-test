@@ -17,7 +17,7 @@ const Home = () => {
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga facere
         earum.
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 my-20 text-center justify-center p-3 md:px-10 ">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 my-20 text-center justify-center p-5 md:px-10 ">
         <Advert
           icon={<GiTestTubes fontSize={30} />}
           styling="advert md:col-span-1 "
