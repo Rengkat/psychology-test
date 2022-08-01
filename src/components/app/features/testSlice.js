@@ -1,5 +1,6 @@
-import { createSlice, nanoid } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 import { data } from "../data/data";
+import { blog } from "../data/data";
 
 const initialState = {
   questions: data,
@@ -8,6 +9,8 @@ const initialState = {
   quizeState: "question",
   selectedAnswers: [],
   enableClick: true,
+  blogs: blog,
+  showMore: false,
 };
 
 const questionSlice = createSlice({
@@ -38,6 +41,11 @@ const questionSlice = createSlice({
     enableNextButton(state) {
       state.enableClick = !state.enableClick;
     },
+    toggleShowMore(state, action) {
+      const { togle, id } = action.payload;
+      let targetBlog = state.blogs.find((blog) => blog.id === id);
+      targetBlog.togle = !targetBlog.togle;
+    },
   },
 });
 
@@ -51,4 +59,5 @@ export const {
   resartScore,
   addSelectedAnswers,
   enableNextButton,
+  toggleShowMore,
 } = questionSlice.actions;
