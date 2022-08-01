@@ -4,7 +4,7 @@ import Hero from "./Hero";
 import { GiTestTubes } from "react-icons/gi";
 import { MdMapsHomeWork } from "react-icons/md";
 import { FaResearchgate } from "react-icons/fa";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -13,11 +13,11 @@ const Home = () => {
       <h1 className="text-3xl md:text-4xl font-bold text-center capitalize mt-10 md:mt-32 ">
         Welcome to our site
       </h1>
-      <p className="text-xl text-center px-5 md:mb-20">
+      <p className="md:text-xl text-center px-5 md:mb-20">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga facere
         earum.
       </p>
-      <div className="grid grid-cols-4 md:grid-cols-3  gap-5 my-10 text-center justify-center p-2 md:px-10 ">
+      <div className="grid grid-cols-4 md:grid-cols-3 gap-3 my-10 text-center justify-center p-1 md:px-10 ">
         <Advert
           icon={<GiTestTubes fontSize={30} />}
           styling="advert col-span-2 md:col-span-1 "

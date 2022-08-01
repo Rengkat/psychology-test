@@ -83,3 +83,5 @@ export const data = [
     ],
   },
 ];
+
+export const blog = [];
