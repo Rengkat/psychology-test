@@ -22,7 +22,7 @@
     @apply text-slate-300 font-semibold md:text-2xl;
   }
   .advert {
-    @apply row-span-1 h-[40vh] md:h-[60vh] transition-all ease-in duration-300 hover:bg-[#983fcb] hover:text-white  shadow-md rounded-md border-2 border-black flex items-center justify-center;
+    @apply h-[50vh] md:h-[60vh] transition-all ease-in duration-300 hover:bg-[#983fcb] hover:text-white  shadow-md rounded-md border-2 border-black flex items-center justify-center;
   }
   .newleterBtn {
     @apply bg-[#6e0ca7] my-4 font-semibold rounded shadow-md py-3 px-7 text-white;
